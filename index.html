@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>PiyoCarousel</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">PiyoCarousel
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					  </li>
+					</ul>
+					<form class="d-flex">
+					  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					  <button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				  </div>
+				</div>
+			  </nav>
+			</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+
+		<p>課題提出期限: 12月5日(月)</p>
+		
+		
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <!-- カルーセル部分 -->
+		  <div class="carousel-inner">
+			<!-- First slide -->
+			<div class="carousel-item active">
+				<img class="img1 d-block w-100" width="960px" height="960px"  img class="d-block w-100 " alt="First slide" src="./images/bkg_html.png">
+	  
+			  <!-- キャプション -->
+			  <div class="container">
+				<div class="carousel-caption text-start">
+				  <h1>Hello, HTML.</h1>
+				  <p>HTMLは、主にWorld Wide Webにおいて、Webページを表現するために用いられます。</p>
+				  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- Second slide -->
+			<div class="carousel-item">
+				<img class="img2 d-block w-100"  alt="Second slide"  src="./images/bkg_css.png">
+	  
+			</div>
+
+			<!-- Third slide -->
+			<div class="carousel-item">
+				<img class="img3 d-block w-100" alt="Third_slide" src="./images/bkg_javascript.png">
+	  
+			</div>
+		  </div>
+
+		  <!-- コントローラー部分-->
+		  <!-- 前に戻るアイコン -->
+		  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </button>
+		  <!-- 次に送るアイコン -->
+		  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	  
+	  
+		<div class="container marketing">
+	  
+		  <div class="row">
+			<div class="col-lg-4">
+				<img src="./images/logo_jquery.png" height="180" width="180" class="rounded-circle " alt="./images/logo_jquery.png">
+	  
+			  <h2>jQuery</h2>
+			  <p>jQuery(ジェイクエリー)は、ウェブブラウザ用のJavaScriptコードをより容易に
+				記述できるようにするために設計されたJavaScriptライブラリです。</p>
+			  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+			</div>
+			<div class="col-lg-4">
+				<img src="./images/logo_bootstrap.png" height="180" width="180" class="rounded-circle " alt="./images/logo_jquery.png">
+	  
+			  <h2>Bootstrap</h2>
+			  <p>BootstrapはWebサイトやWebアプリを作成するフレームワークです。タイポグラフィ、
+				フォーム、ボタン、ナビゲーションなど、HTMLおよびCSSベースのテンプレートが用意されます。</p>
+			  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+			</div>
+			<div class="col-lg-4">
+				<img src="./images/logo_vue.png" height="180" width="180" class="rounded-circle " alt="./images/logo_jquery.png">
+	  
+			  <h2>Vue.js</h2>
+			  <p>Vue.jsは、Webアプリケーションにおけるユーザーインタフェイスを構築するための
+				JavaScriptフレームワークです。</p>
+			  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+			</div>
+		  </div>
+	  
+	  
+		  <hr class="featurette-divider">
+	  
+		  <div class="row featurette">
+			<div class="col-md-7">
+			  <h2 class="featurette-heading">1st step. <span class="text-muted">Hello, HTML!!</span></h2>
+			  <p class="lead">HyperText Markup Language(ハイパーテキスト マークアップ ランゲージ)は、ハイパーテキストを記述するためのマークアップ言語の1つで、主にWorld Wide Web(WWW)において、ウェブページを表現するために用いられます。</p>
+			</div>
+			<div class="col-md-5">
+				<img class="img1 d-block w-100" width="400px" height="400px"  img class="d-block w-100 " alt="First slide" src="./images/bkg_html.png">
+	  
+			</div>
+		  </div>
+	  
+		  <hr class="featurette-divider">
+	  
+		  <div class="row featurette">
+			<div class="col-md-7 order-md-2">
+			  <h2 class="featurette-heading">2nd step. <span class="text-muted">Hello, CSS!!</span></h2>
+			  <p class="lead">CSS(Cascading Style Sheets)は、HTMLやXMLの要素をどのように修飾(表示)するかを指示する仕様の一つで、文書の構造と体裁を分離させるという理念を実現するために提唱されたスタイルシートの具体的な仕様の一つです。</p>
+			</div>
+			<div class="col-md-5 order-md-1">
+				<img class="img2 d-block w-100" width="400px" height="400px"  alt="Second slide"  src="./images/bkg_css.png">
+
+			</div>
+		  </div>
+	  
+		  <hr class="featurette-divider">
+	  
+		  <div class="row featurette">
+			<div class="col-md-7">
+			  <h2 class="featurette-heading">3rd step. <span class="text-muted">Hello, JS!!</span></h2>
+			  <p class="lead">JavaScriptは、プログラミング言語であり、HTMLやCSSと並ぶ、WWWの中核技術の一つです。利用される場面はフロント/バックエンド、アプリなど、ブラウザからサーバ、デスクトップからスマートフォンまで多岐にわたります。</p>
+			</div>
+			<div class="col-md-5">
+				<img class="img3 d-block w-100" width="400px" height="400px" alt="Third_slide" src="./images/bkg_javascript.png">
+	  
+			</div>
+		  </div>
+	  
+		  <hr class="featurette-divider">
+	  
+	  
+		</div>
+	  </main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/">スタートガイド</a>、
+				<a href="./libs/bootstrap/icons/index.html" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/vue/vue.global.js"></script>
+	<script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
